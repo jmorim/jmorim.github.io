@@ -1,0 +1,3 @@
+[submodule "platemapr"]
+	path = platemapr
+	url = git@github.com:jmorim/platemapr.git
