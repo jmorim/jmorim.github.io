@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "List of Instruments"
-permalink: /instruments/instruments.md
+permalink: /instruments/list/
 ---
 
 # HPLCs
