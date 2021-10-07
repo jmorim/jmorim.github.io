@@ -1,8 +1,6 @@
----
 layout: page
 title: "List of Instruments"
 permalink: /instruments/list/
----
 
 # HPLCs
 HPLC-A
