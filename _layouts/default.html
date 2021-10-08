@@ -1,46 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <nav id="navbar" class="collapse navbar-collapse">
-    <ul class="nav navbar-nav">
-      {% assign links = site.data.navigation %}
-      {% for link in links %}
-        {% if page.url contains link.url %}
-          {% assign class = 'active' %}
-        {% endif %}
-        {% if link.sublinks %}
-        <li class="dropdown {{ class }}">
-          <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            {% for sublink in link.sublinks %}
-              {% if sublink.title == 'separator' %}
-                <li role="separator" class="divider"></li>
-              {% else %}
-                <li>
-                  <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </li>
-      {% else %}
-        <li class="{{ class }}">
-          <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-  </nav>
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
+<!--   <nav class="container page__nav" id="navigation">
+    <ul class="nav nav-pills page__nav-inner" id="navbar">
+      <li role="presentation" class="dropdown dropdown--navbar page__nav-hidden-mobile page__btn-nav-root">
+        <a class="dropdown-toggle" href="#" role="button">
+          "instruments "
+          <span class="caret "></span>"
+        </a>
+        <li class="dropdown-menu dropdown-menu--top">
+          <a href="/instruments/list" id="instruments">instruments</a>
+        </li>
+      <li><a href="/forms" id="forms">forms</a></li>
+      <li><a href="https://morimoto.shinyapps.io/platemapr" id="tools">tools</a></li>
+    </ul>
+  </nav> -->
+  <nav class="container page__nav" id="navigation">
+    <ul class="nav nav-pills page__nav-inner" id="navbar">
+      <li role="presentation" data-page="index.html" class="page__nav-hidden-mobile page__btn-nav-root active block">
+        <a href="index.html" class="nav__link">Home</a>
+      </li>
+
+    </ul>
+  </nav>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/forms/">Forms</a>
-      <a href="/instruments/list">Instruments</a>
-    </nav>
     <h1>{{ page.title }}</h1>
     <section>
       {{ content }}
