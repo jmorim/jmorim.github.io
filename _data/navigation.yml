@@ -1,0 +1,11 @@
+- title: About
+  url: /about.html
+- title: Instruments
+  url: /instruments/list.html
+- title: Forms
+  url: /forms.html
+- title: Tools
+  url: /tools.html
+  sublinks:
+    - title: platemapr
+      url: https://morimoto.shinyapps.io/platemapr
