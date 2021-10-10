@@ -1,0 +1,50 @@
+<p>
+    Please fill out this form if you require a speicifc HPLC and/or LC/MS analysis.
+    Samples will be placed in a queue. HPLC and non-serum LC/MS samples should be
+    placed in a 4&deg;C refrigerator (let us know where it is). LC/MS serum samples
+    should be frozen and stored in a -80&deg;C freezer.
+</p>
+<form>
+    <h3>
+        Experimental setup
+    </h3>
+    <div class="mb-3">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+        <script>
+            document.getElementById('e').value = new Date().toISOString().slice(0, -1);
+        </script>
+    </div>
+    <div class="mb-3">
+        <ul>
+            <label for="name_postdoc">Postdoc Name</label>
+            <input type="text" id="name_postdoc" name="name_postdoc">
+            <label for="name_grad">Graduate Student Name</label>
+            <input type="text" id="name_grad" name="name_grad">
+            <label for="name_tech">Technician Name</label>
+            <input type="text" id="name_tech" name="name_tech">
+        </ul>
+    </div>
+    <div class="mb-3">
+        <ul>
+            <label for="compounds">Compound name</label>
+            <input type="text" id="compounds" name="compound">
+        </ul>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="study" id="vitro" checked>
+        <label class="form-check-label" for="vitro">
+            In-vitro
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="study" id="vivo">
+        <label class="form-check-label" for="vivo">
+            In-vivo
+        </label>
+    </div>
+    <div class="mb-3">
+        <label for="sample_number">Number of samples</label>
+        <input type="number" id="sample_number" name="sample_number">
+    </div>
+</form>

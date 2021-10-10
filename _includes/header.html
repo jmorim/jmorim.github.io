@@ -6,7 +6,7 @@
   <nav class="d-flex justify-content-center page__nav" id="navigation">
     <ul class="nav nav-pills page__nav-inner" id="navbar">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">active</a>
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">instruments</a>
@@ -14,7 +14,7 @@
           <li><a class="dropdown-item" href="#">HPLC-A</a></li>
           <li><a class="dropdown-item" href="#">HPLC-B (LC/MS)</a></li>
           <li><a class="dropdown-item" href="#">HPLC-D</a></li>
-          <li><a class="dropdown-item" href="#">HPLC-I</a></li>
+          <li><a class="dropdown-item" href="#">HPLC-I (LC/MS)</a></li>
           <li><a class="dropdown-item" href="#">UPLC/TOF</a></li>
           <li><a class="dropdown-item" href="#">HPLC/QQQ</a></li>
         </ul>
@@ -38,8 +38,13 @@
           <li><a class="dropdown-item" href="/forms">method development request</a></li>
         </ul>
       </li>
-      <button class="btn" id="night">
-        <i class="far fa-moon" aria-label="Switch to night/day mode"></i>
-      </button>
+      <a id="darkmode-button" class="btn btn-outline-secondary">
+        <i class="far fa-moon" title="Switch to dark mode"></i>
+        <!-- <i class="far fa-sun" title="Switch to light mode"></i> -->
+      </a>
+      <!-- <button class="btn" id="night">
+        <i class="far fa-moon" title="Toggle dark mode" aria-label="Switch to night/day mode"></i>
+        <i class="far fa-sun" title="Toggle dark mode" aria-label="Switch to night/day mode"></i>
+      </button> -->
     </ul>
   </nav>
