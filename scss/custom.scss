@@ -1,33 +1,13 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@use "fontawesome";
+@use "regular";
+@use "solid";
 
-.dark {
-    $primary: #012345;
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
 
-    $theme-colors: (
-        "primary": $primary
-    );
-
-    @each $color, $value in $theme-colors {
-        --#{$variable-prefix}#{$color}: #{$value};
-    }
-    
-    $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
-    @each $color, $value in $theme-colors-rgb {
-        --#{variable-prefix}#{$color}-rgb: #{$value};
-    }
-
-    $body-color: #eeeeee;
-    $body-bg: #263C5C;
-
-    --#{$variable-prefix}body-color: #{$body-color};
-    --#{$variable-prefix}body-bg: #{$body-bg};
-
-    @import "bootstrap";
-}
-
-@import "../node_modules/boostrap/scss/root";
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/containers";
+// // @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+// @import "../node_modules/boostrap/scss/root";
+// @import "../node_modules/bootstrap/scss/utilities";
+// @import "../node_modules/bootstrap/scss/type";
+// @import "../node_modules/bootstrap/scss/containers";
