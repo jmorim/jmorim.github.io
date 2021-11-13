@@ -79,8 +79,8 @@
 </form> -->
 
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbINGFrMJRPtQCekSdF95ZxdaEEgNwGAP13zLNaD-tRhIZ_Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-    Date:<br>
-    <input type="text" name="entry.200670763" id="entry.200670763">
+    <p>Date:</p>
+    <input type="date" name="entry.200670763" id="entry.200670763" required>
     <input type="submit" value="Submit">
 </form>
 
@@ -93,6 +93,6 @@
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
   $('#gform *').fadeOut(2000);
-  $('#gform').prepend('got it');
+  $('#gform').prepend('Request submitted.<br>Refresh the page to submit another request.<br>');
   });
 </script>
