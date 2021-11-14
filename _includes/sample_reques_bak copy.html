@@ -1,10 +1,10 @@
 <p>
-    Please fill out this form if you require a speicifc HPLC and/or LC/MS analysis.
+    Please fill out this form if you require a specific HPLC and/or LC/MS analysis.
     Samples will be placed in a queue. HPLC and non-serum LC/MS samples should be
     placed in a 4&deg;C refrigerator (let us know where it is). LC/MS serum samples
     should be frozen and stored in a -80&deg;C freezer.
 </p>
-<form
+<!-- <form
     action="https://formspree.io/f/xknkajlo"
     method="POST"
     enctype="multipart/form-data"
@@ -70,4 +70,29 @@
     <div class="mb-3">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
+</form> -->
+<!-- <form name="gform" id="gform" enctype="text/plain"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSdOSErCybr5xm4GpJ0EC3NKfEJul6GJmaVnxS3UTWhYBLxd5A/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    Date:<br>
+    <input type="date" name="entry.2005802037" id="entry.2005802037"><br>
+    <input type="submit" value="submit">
+</form> -->
+
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbINGFrMJRPtQCekSdF95ZxdaEEgNwGAP13zLNaD-tRhIZ_Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    <p>Date:</p>
+    <input type="date" name="entry.200670763" id="entry.200670763" required>
+    <input type="submit" value="Submit">
 </form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}">
+</iframe>
+
+<!-- <script src="assets/js/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Request submitted.<br>Refresh the page to submit another request.<br>');
+  });
+</script>

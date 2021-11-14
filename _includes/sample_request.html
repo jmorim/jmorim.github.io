@@ -78,9 +78,104 @@
     <input type="submit" value="submit">
 </form> -->
 
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbINGFrMJRPtQCekSdF95ZxdaEEgNwGAP13zLNaD-tRhIZ_Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-    <p>Date:</p>
-    <input type="date" name="entry.200670763" id="entry.200670763" required>
+<!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbINGFrMJRPtQCekSdF95ZxdaEEgNwGAP13zLNaD-tRhIZ_Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
+<!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdOSErCybr5xm4GpJ0EC3NKfEJul6GJmaVnxS3UTWhYBLxd5A/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
+<form class="gform" method="POST" data-email="jmorim+request@mit.edu"
+    action="https://script.google.com/macros/s/AKfycbxAFPMTRbpGCx2OYCjs4nie2o-4mpgn_sKSQidQAbs2Uu8PE0H0nJPaMXrJ8Hjmu09_8g/exec"
+    target="hidden_iframe" onsubmit="submitted=true;">
+<!--     <div class="form-group">
+        <label for="entry.200670763">Date</label>
+        <input type="date" class="form-control" name="entry.200670763" id="entry.200670763" required>
+    </div> -->
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label for="researcher">Researcher Name</label>
+            <input type="text" class="form-control" name="researcher" id="researcher" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="researcher_email">e-mail</label>
+            <input type="text" class="form-control" name="researcher_email" id="researcher_email" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label for="tech">Technician Name</label>
+            <input type="text" class="form-control" name="tech" id="tech">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="tech_email">e-mail</label>
+            <input type="text" class="form-control" name="tech_email" id="tech_email">
+        </div>
+    </div>
+    <hr/>
+    <h4>Sample info</h4>
+    <div class="form-group row">
+        <!-- <div class="form-group"> -->
+        <div class="col-2">
+            <legend class="col-form-label pt-0">Experiment Type</legend>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="study_type" id="rad.opt.1" value="in_vitro" checked/>
+                    <label class="form-check-label" for="rad.opt.1">
+                        in vitro
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="study_type" id="rad.opt.2" value="ex_vivo"/>
+                    <label class="form-check-label" for="rad.opt.2">
+                        ex vivo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="study_type" id="rad.opt.3" value="in_vivo"/>
+                    <label class="form-check-label" for="rad.opt.3">
+                        in vivo
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="form-group col-sm-10"> -->
+        <div class="col-4">
+            <label for="compound">Compound</label>
+            <input type="text" class="form-control" name="compound" id="compound" />
+        </div>
+        <div class="col-2">
+            <label for="n_samples"># samples</label>
+            <input type="number" class="form-control" name="n_samples" id="n_samples" />
+        </div>
+        <div class="col-4">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" name="location" id="location" />
+        </div>
+    </div>
+    <div class="form-group row pt-4">
+      <div class="col-3">
+        <label for="instrument">Instrument</label>
+        <select class="form-control" name="instrument" id="instrument">
+          <option>Any</option>
+          <option>HPLC-A</option>
+          <option>HPLC-B (LC/MS)</option>
+          <option>HPLC-D</option>
+          <option>HPLC-E</option>
+          <option>HPLC-F</option>
+          <option>UPLC-TOF</option>
+          <option>BWH Triple-Quad LC/MS</option>
+          <option>GC/MS</option>
+          <option>Other (specify in comments)</option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="platemap">Platemap</label>
+        <!-- <input type="file" class="form-control-file" name="platemap" id="platemap"> -->
+        <br>
+        <a href="https://www.dropbox.com/request/Y5OpOHCYa4YIW0is2JSx" target="_blank">Upload your plate map here</a>
+      </div>
+      <div class="col-6">
+        <label for="comments">Additional comments</label>
+        <input type="text" class="form-control" name="comments" id="comments" />
+      </div>
+    </div>
+    <hr/>
     <input type="submit" value="Submit">
 </form>
 
@@ -88,7 +183,7 @@
 </iframe>
 
 <!-- <script src="assets/js/jquery.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
