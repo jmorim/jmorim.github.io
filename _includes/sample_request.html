@@ -3,90 +3,20 @@
     Samples will be placed in a queue. HPLC and non-serum LC/MS samples should be
     placed in a 4&deg;C refrigerator (let us know where it is). LC/MS serum samples
     should be frozen and stored in a -80&deg;C freezer.
-</p>
-<!-- <form
-    action="https://formspree.io/f/xknkajlo"
-    method="POST"
-    enctype="multipart/form-data"
-    >
-    <h3>
-        Experimental setup
-    </h3>
-    <div class="mb-3">
-        <label for="date">Date</label>
-        <input type="date" id="date" name="date">
-        <script>
-            document.getElementById('e').value = new Date().toISOString().slice(0, -1);
-        </script>
-    </div>
-    <div class="mb-3">
-        <ul>
-            <label for="name_postdoc">Postdoc Name</label>
-            <input type="text" id="name_postdoc" name="name_postdoc">
-            <label for="name_grad">Graduate Student Name</label>
-            <input type="text" id="name_grad" name="name_grad">
-            <label for="name_tech">Technician Name</label>
-            <input type="text" id="name_tech" name="name_tech">
-        </ul>
-    </div>
-    <div class="mb-3">
-        <ul>
-            <label for="compounds">Compound name</label>
-            <input type="text" id="compounds" name="compound">
-        </ul>
-    </div>
-    <h4>Study type</h4>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="study" id="vitro" checked>
-        <label class="form-check-label" for="vitro">
-            In-vitro
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="study" id="vivo">
-        <label class="form-check-label" for="vivo">
-            In-vivo
-        </label>
-    </div>
-        <label for="sample_number">Number of samples</label>
-        <input type="number" id="sample_number" name="sample_number">
-        <h4>Location</h4>
-        <div class="mb-3">
-            <p>Room </p>
-            <input class="form-check-input" type="radio" name="location" id="641">
-            <label class="form-check-label" for="641">
-                76-641
-            </label>
-            <input class="form-check-input" type="radio" name="location" id="643">
-            <label class="form-check-label" for="643">
-                76-643
-            </label>
-            <label for="aisle">Aisle</label>
-            <input type="number" id="aisle" name="aisle">
-        </div>
-    <h3>
-        Reporting
-    </h3>
-    <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form> -->
-<!-- <form name="gform" id="gform" enctype="text/plain"
-    action="https://docs.google.com/forms/d/e/1FAIpQLSdOSErCybr5xm4GpJ0EC3NKfEJul6GJmaVnxS3UTWhYBLxd5A/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-    Date:<br>
-    <input type="date" name="entry.2005802037" id="entry.2005802037"><br>
-    <input type="submit" value="submit">
-</form> -->
-
+</p><hr/>
 <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScbINGFrMJRPtQCekSdF95ZxdaEEgNwGAP13zLNaD-tRhIZ_Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
 <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdOSErCybr5xm4GpJ0EC3NKfEJul6GJmaVnxS3UTWhYBLxd5A/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
 <form class="gform" method="POST" data-email="jmorim+request@mit.edu"
     action="https://script.google.com/macros/s/AKfycbxAFPMTRbpGCx2OYCjs4nie2o-4mpgn_sKSQidQAbs2Uu8PE0H0nJPaMXrJ8Hjmu09_8g/exec"
-    target="hidden_iframe" onsubmit="submitted=true;">
+    onsubmit="submitted=true;">
 <!--     <div class="form-group">
         <label for="entry.200670763">Date</label>
         <input type="date" class="form-control" name="entry.200670763" id="entry.200670763" required>
     </div> -->
+    <div style="display:none" class="confirmation">
+        <h4>Request form submitted. You can refill this form to submit another sample request</h4>
+        <hr/>
+    </div>
     <div class="row">
         <div class="form-group col-md-6">
             <label for="researcher">Researcher Name</label>
@@ -179,15 +109,16 @@
     <input type="submit" value="Submit">
 </form>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}">
-</iframe>
+<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}">
+</iframe> -->
 
 <!-- <script src="assets/js/jquery.min.js"></script> -->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-<script type="text/javascript">var submitted=false;</script>
+<!-- <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
   $('#gform *').fadeOut(2000);
   $('#gform').prepend('Request submitted.<br>Refresh the page to submit another request.<br>');
   });
-</script>
+</script> -->
+<script data-cfasync="false" type="text/javascript" src="../assets/scripts/form-submission-handler.js"></script>
