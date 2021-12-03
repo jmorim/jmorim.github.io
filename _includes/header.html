@@ -1,4 +1,3 @@
-<!-- <div class="container-fluid" id="title"> -->
 <div class="d-flex justify-content-center">
   <!-- <h1>{{ page.title }}</h1> -->
   <h1>GI Bioanalytics</h1>
@@ -41,17 +40,10 @@
       </li>
       <a id="darkmode-button" class="btn btn-outline-secondary">
         <i class="far fa-sun" title="Switch to dark mode"></i>
-        <!-- <i class="far fa-sun" title="Switch to light mode"></i> -->
       </a>
-      <!-- <button class="btn" id="night">
-        <i class="far fa-moon" title="Toggle dark mode" aria-label="Switch to night/day mode"></i>
-        <i class="far fa-sun" title="Toggle dark mode" aria-label="Switch to night/day mode"></i>
-      </button> -->
       <script>
         document.querySelector("#darkmode-button").onclick = function(e){
           darkmode.toggleDarkMode();
-/*           var target = e.target;
-          target.classList.toggle('far fa-moon'); */
           $('#darkmode-button').find('i').toggleClass('fa-moon fa-sun');
         }
       </script>
