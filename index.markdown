@@ -10,6 +10,6 @@ title: GI Bioanalytics
 
 This is a temporary site while we figure out how to improve communication and streamline workflow between the bioanalytics team and researchers.
 
-You'll spend most of your time here submitting sample requests. Go to [Forms > sample request] and fill out the required information.
+You'll spend most of your time here submitting sample requests. Go to [the sample request form]({% link sample_request.md %}) and fill out the required information.
 
 Most of this site is still under construction.

@@ -39,6 +39,13 @@
         }
         formData[name] = data.join(', ');
       }
+
+      if (element.type == 'checkbox') {
+        formData[name] = "";
+        if (element.checked) {
+          formData[name] = element.value;
+        }
+      }
     });
 
     // add form-specific values into the data
