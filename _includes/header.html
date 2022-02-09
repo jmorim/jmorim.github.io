@@ -6,51 +6,52 @@
   <h1>GI Bioanalytics</h1>
 </div>
 <!-- <h1>{{ page.title }}</h1> -->
-  <nav class="d-flex justify-content-center page__nav" id="navigation">
-    <ul class="nav nav-pills page__nav-inner" id="navbar">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="/">Home</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">instruments</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="/instruments/list.html#hplc">HPLC</a></li>
-          <li><a class="dropdown-item" href="/instruments/list.html#lcms-and-lc-msms">LC/MS and LC-MS/MS</a></li>
-          <li><a class="dropdown-item" href="/instruments/list.html#icpms">ICP/MS</a></li>
-          <li><a class="dropdown-item" href="/instruments/list.html#optical-analysis">Optical Analysis</a></li>
-          <li><a class="dropdown-item" href="/instruments/list.html#thermal-analysis">Thermal Analysis</a></li>
-          <li><a class="dropdown-item" href="/instruments/list.html#gcfid-and-gcms">GC/FID and GC/MS</a></li>
-          <li><a class="dropdown-item" href="/instruments/list.html#preparativeflash-chromatography">Preparative/Flash Chromatography</a></li>
-          <li><a class="dropdown-item" href="/instruments/list.html#gpcpolymer-analysis">GPC/Polymer Analysis</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">methods</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">drugs</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">tools</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="https://morimoto.shinyapps.io/platemapr">platemapr</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">forms</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="/forms/sample_request">sample request</a></li>
-          <li><a class="dropdown-item" href="/forms">method development request</a></li>
-        </ul>
-      </li>
-      <a id="darkmode-button" class="btn btn-outline-secondary">
-        <i class="far fa-sun" title="Switch to dark mode"></i>
-      </a>
-      <script>
-        document.querySelector("#darkmode-button").onclick = function(e){
-          darkmode.toggleDarkMode();
-          $('#darkmode-button').find('i').toggleClass('fa-moon fa-sun');
-        }
-      </script>
-    </ul>
-  </nav>
+<nav class="d-flex justify-content-center page__nav" id="navigation">
+  <ul class="nav nav-pills page__nav-inner" id="navbar">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">instruments</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/instruments/list.html#hplc">HPLC</a></li>
+        <li><a class="dropdown-item" href="/instruments/list.html#lcms-and-lc-msms">LC/MS and LC-MS/MS</a></li>
+        <li><a class="dropdown-item" href="/instruments/list.html#icpms">ICP/MS</a></li>
+        <li><a class="dropdown-item" href="/instruments/list.html#optical-analysis">Optical Analysis</a></li>
+        <li><a class="dropdown-item" href="/instruments/list.html#thermal-analysis">Thermal Analysis</a></li>
+        <li><a class="dropdown-item" href="/instruments/list.html#gcfid-and-gcms">GC/FID and GC/MS</a></li>
+        <li><a class="dropdown-item" href="/instruments/list.html#preparativeflash-chromatography">Preparative/Flash Chromatography</a></li>
+        <li><a class="dropdown-item" href="/instruments/list.html#gpcpolymer-analysis">GPC/Polymer Analysis</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">methods</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">drugs</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">tools</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="https://morimoto.shinyapps.io/platemapr">platemapr</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">forms</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/forms/sample_request">sample request</a></li>
+        <li><a class="dropdown-item" href="/forms">method development request</a></li>
+      </ul>
+    </li>
+    <a id="darkmode-button" class="btn btn-outline-secondary">
+      <i class="far fa-sun" title="Switch to dark mode"></i>
+    </a>
+    <script>
+      document.querySelector("#darkmode-button").onclick = function(e){
+        darkmode.toggleDarkMode();
+        $('#darkmode-button').find('i').toggleClass('fa-moon fa-sun');
+      }
+    </script>
+  </ul>
+</nav>
+<hr/>
