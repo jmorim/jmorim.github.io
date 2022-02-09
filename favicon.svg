@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="flask"
+   class="svg-inline--fa fa-flask"
+   role="img"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="favicon.svg"
+   width="180"
+   height="180"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="D:\Users\morimoto\Documents\Work\koch\mit_bioanal\jmorim.github.io\assets\images\favicon.png"
+   inkscape:export-xdpi="36"
+   inkscape:export-ydpi="36"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     width="512px"
+     inkscape:zoom="1"
+     inkscape:cx="-50.5"
+     inkscape:cy="152.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1592"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4"
+     scale-x="1" />
+  <path
+     fill="currentColor"
+     d="M 164.95245,141.85547 123.43292,75.585937 V 22.5 h 2.49609 c 4.65821,0 8.1211,-3.779297 8.1211,-8.4375 l -7e-5,-5.625 C 134.05004,3.7792969 130.27074,0 125.92894,0 H 53.436825 C 48.7962,0 45.002841,3.7792969 45.002841,8.4375 l -7e-5,5.625 c 0,4.658203 3.779297,8.4375 8.121093,8.4375 h 2.496094 L 56.249325,75.585937 15.0462,141.85547 C 4.7524502,158.41406 16.617685,180 36.171591,180 H 143.82003 c 19.55039,0 31.4332,-21.62109 21.13242,-38.14453 z M 59.448544,112.5 76.376278,85.208203 c 1.59961,-1.782422 2.337891,-4.067578 2.337891,-6.458203 l 0.02289,-56.25 h 22.496481 l -0.0211,56.25 c 0,2.416992 0.79101,4.658203 2.06543,6.461719 L 120.19854,112.5 Z"
+     id="path2"
+     style="fill:#a31f34;fill-opacity:1;stroke-width:0.351562"
+     inkscape:export-filename="D:\Users\morimoto\Documents\Work\koch\mit_bioanal\jmorim.github.io\favicon.png"
+     inkscape:export-xdpi="6"
+     inkscape:export-ydpi="6" />
+</svg>
