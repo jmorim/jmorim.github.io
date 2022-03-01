@@ -1,0 +1,99 @@
+<p>
+    Please fill out this form if you need a new method developed for a compound.
+    Provide an analytical method found in the literature, your study information, and ~ 50 mg
+    of the analyte(s).
+    Please allow at least one week for method development. Complications arising from the compound or standard supplied may prolong development.
+    Methods are validated according to USP and FDA guidelines.
+</p><hr/>
+<form class="gform" method="POST"
+    action="https://script.google.com/macros/s/AKfycbxptRcniXCOuvTpbpEkLYPAcjAnFmN0QNn9FK7QyJ4gry90T7zW3TC2pxDB6fTJuPTXdA/exec"
+    onsubmit="submitted=true;">
+    <div style="display:none" class="confirmation">
+        <h4>Method development request form submitted. You can refill this form to submit another request</h4>
+        <hr/>
+    </div>
+    <h4>Contact Info</h4>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label for="researcher">Researcher Name</label>
+            <input type="text" class="form-control" name="researcher" id="researcher" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="researcher_email">e-mail</label>
+            <input type="text" class="form-control" name="researcher_email" id="researcher_email" required>
+        </div>
+    </div>
+    <hr/>
+    <h4>Analyte info</h4>
+    <div class="form-group row">
+        <div class="col-md-2 col-sm-6">
+            <legend class="col-form-label pt-0">Experiment Type</legend>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="study_type" id="rad.opt.1" value="in_vitro" checked/>
+                    <label class="form-check-label" for="rad.opt.1">
+                        in vitro
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="study_type" id="rad.opt.2" value="ex_vivo"/>
+                    <label class="form-check-label" for="rad.opt.2">
+                        ex vivo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="study_type" id="rad.opt.3" value="in_vivo"/>
+                    <label class="form-check-label" for="rad.opt.3">
+                        in vivo
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <label for="compound">Compound(s)</label>
+            <input type="text" class="form-control" name="compound" id="compound" required/>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <label for="n_samples">Matrix (e.g. simulated gastric fluid, serum)</label>
+            <input type="text" class="form-control" name="matrix" id="matrix" required/>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <label for="location">Reference standard location</label>
+            <input type="text" class="form-control" name="location" id="location" required/>
+        </div>
+    </div>
+    <div class="form-group row pt-4">
+      <div class="col-md-6 col-sm-12">
+          <label for="conc_min" class="form-label">Expected concentration range</label>
+          <div class="input-group">
+              <input type="number" class="form-control" id="conc_min" name="conc_min" aria-label="min concentration">
+              <span class="input-group-text">to</span>
+              <input type="number" class="form-control" id="conc_max" name="conc_max" aria-label="max concentration">
+              <select class="form-select" name="units" id="units">
+                <option>pg/mL</option>
+                <option>ng/mL</option>
+                <option selected>&mu;g/mL</option>
+                <option>mg/mL</option>
+                <option>ppt</option>
+                <option>ppb</option>
+                <option>ppm</option>
+              </select>
+          </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <label for="literature">Literature</label>
+        <br>
+        <a href="https://www.dropbox.com/request/zjzuto0n0WK7Wu4kd7fV" target="_blank">Upload your literature here (opens in a new tab)</a>
+      </div>
+    </div>
+    <div class="form-group row pt-4">
+      <div class="col-12">
+        <label for="comments">Additional comments</label>
+        <input type="text" class="form-control" name="comments" id="comments" />
+      </div>
+    </div>
+    <hr/>
+    <input type="submit" value="Submit">
+</form>
+
+<script data-cfasync="false" type="text/javascript" src="../assets/scripts/form-submission-handler.js"></script>
