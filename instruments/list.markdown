@@ -5,4 +5,4 @@ permalink: /instruments/list
 ---
 
 ## Instruments available
-{% include list.html %}
+{% include table.html %}
