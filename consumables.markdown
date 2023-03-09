@@ -10,4 +10,6 @@ title: Consumables
 
 Please use amber vials if your compounds are photosensitive.
 
+Josh no longer recommends MacHarey-Nagel due to poor packaging and shipping.
+
 {% include consumables_table.html %}
